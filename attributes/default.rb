@@ -32,6 +32,6 @@ default['windows-jazz']['repo'] = "http://ca-toronto-dl02.jazz.net/mirror/downlo
 
 default['windows-jazz']['release'] = "5.0"
 
-default['windows-jazz']['url'] = "#{default['windows-jazz']['repo']}/#{default['windows-jazz']['release']}/#{default['windows-jazz']['release']/JTS-CCM-QM-RM-repo-#{default['windows-jazz']['release']}.zip?tjazz=T351B5B3Ff5y1i098b66H2516ssB06"
+default['windows-jazz']['url'] = "#{default['windows-jazz']['repo']}/#{default['windows-jazz']['release']}/#{default['windows-jazz']['release']}/JTS-CCM-QM-RM-repo-#{default['windows-jazz']['release']}.zip?tjazz=T351B5B3Ff5y1i098b66H2516ssB06"
 
 default['windows-jazz']['repoDir'] = '"c:\temp\jazz-install"'
