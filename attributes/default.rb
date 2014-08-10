@@ -28,10 +28,10 @@ default['windows-jazz']['imrDir'] = '"c:\temp\ibm-imr"'
 #Click Install. Installation Manager will prompt to install using the repositories.
 
 # the choice of Jazz CLM Release
-default['windows-jazz']['repo'] = "https://jazz.net/downloads/rational-team-concert/releases"
+default['windows-jazz']['repo'] = "http://ca-toronto-dl02.jazz.net/mirror/downloads/clm"
 
 default['windows-jazz']['release'] = "5.0"
 
-default['windows-jazz']['url'] = "#{default['windows-jazz']['repo']}/#{default['windows-jazz']['release']}/JTS-CCM-QM-RM-repo-#{default['windows-jazz']['release']}.zip"
+default['windows-jazz']['url'] = "#{default['windows-jazz']['repo']}/#{default['windows-jazz']['release']}/#{default['windows-jazz']['release']/JTS-CCM-QM-RM-repo-#{default['windows-jazz']['release']}.zip?tjazz=T351B5B3Ff5y1i098b66H2516ssB06"
 
 default['windows-jazz']['repoDir'] = '"c:\temp\jazz-install"'
