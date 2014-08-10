@@ -17,8 +17,6 @@
 # limitations under the License.
 #
 
-depends('windows')
-
 myAttrs = node['windows-jazz']
 
 # refactor this and chrome to a separate recipe
