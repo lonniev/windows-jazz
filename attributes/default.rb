@@ -16,8 +16,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# choice of IBM Download Mirror
+default['windows-jazz']['mirror'] = "http://ca-toronto-dl02.jazz.net/mirror/downloads"
+
 # the IBM Installation Manager
-default['windows-jazz']['installer'] = "https://jazz.net/downloads/ibm-installation-manager/releases/1.7.3/agent.installer.win32.win32.x86_64_1.7.3000.20140521_1925.zip"
+default['windows-jazz']['imr-token'] = "0yl152W3a5sd979mvC11Wfiu24UUf4"
+
+default['windows-jazz']['installer'] = "#{default['windows-jazz']['mirror']}/ibm-installation-manager/1.7.3/1.7.3/agent.installer.win32.win32.x86_64_1.7.3000.20140521_1925.zip?tjazz=#{default['windows-jazz']['imr-token']}"
 
 default['windows-jazz']['imrDir'] = "/temp/ibm-imr"
 
@@ -28,12 +33,11 @@ default['windows-jazz']['imrDir'] = "/temp/ibm-imr"
 #Click Install. Installation Manager will prompt to install using the repositories.
 
 # the choice of Jazz CLM Release
-default['windows-jazz']['repo'] = "http://ca-toronto-dl02.jazz.net/mirror/downloads/clm"
-
 default['windows-jazz']['release'] = "5.0"
 
-default['windows-jazz']['token'] = "T351B5B3Ff5y1i098b66H2516ssB06"
+# authenticated user token
+default['windows-jazz']['jazz-token'] = "T351B5B3Ff5y1i098b66H2516ssB06"
 
-default['windows-jazz']['url'] = "#{default['windows-jazz']['repo']}/#{default['windows-jazz']['release']}/#{default['windows-jazz']['release']}/JTS-CCM-QM-RM-repo-#{default['windows-jazz']['release']}.zip?tjazz=#{default['windows-jazz']['token']}"
+default['windows-jazz']['url'] = "#{default['windows-jazz']['mirror']}/clm/#{default['windows-jazz']['release']}/#{default['windows-jazz']['release']}/JTS-CCM-QM-RM-repo-#{default['windows-jazz']['release']}.zip?tjazz=#{default['windows-jazz']['jazz-token']}"
 
 default['windows-jazz']['repoDir'] = "/temp/jazz-install"
