@@ -19,7 +19,7 @@
 # the IBM Installation Manager
 default['windows-jazz']['installer'] = "https://jazz.net/downloads/ibm-installation-manager/releases/1.7.3/agent.installer.win32.win32.x86_64_1.7.3000.20140521_1925.zip"
 
-default['windows-jazz']['imrDir'] = '"c:\temp\ibm-imr"'
+default['windows-jazz']['imrDir'] = "/temp/ibm-imr"
 
 # Instructions for configuring Installation Manager
 #After you have downloaded and installed IBM Installation Manager from this page, follow these steps to configure it to use separately downloaded Installation Manager repositories:
@@ -36,4 +36,4 @@ default['windows-jazz']['token'] = "T351B5B3Ff5y1i098b66H2516ssB06"
 
 default['windows-jazz']['url'] = "#{default['windows-jazz']['repo']}/#{default['windows-jazz']['release']}/#{default['windows-jazz']['release']}/JTS-CCM-QM-RM-repo-#{default['windows-jazz']['release']}.zip?tjazz=#{default['windows-jazz']['token']}"
 
-default['windows-jazz']['repoDir'] = '"c:\temp\jazz-install"'
+default['windows-jazz']['repoDir'] = "/temp/jazz-install"
