@@ -30,12 +30,22 @@ windows_package 'Google Chrome' do
 end
 
 # download and unzip the chosen Jazz Release
+directory myAttrs['repoDir'] do
+    action :delete
+    recursive true
+end if File.directory?(myAttrs['repoDir'])
+
 windows_zipfile myAttrs['repoDir'] do
     source myAttrs['url']
     action :unzip
 end
 
 #download and unzip the IBM Installation Manager
+directory myAttrs['imrDir'] do
+    action :delete
+    recursive true
+end if File.directory?(myAttrs['imrDir'])
+
 windows_zipfile myAttrs['imrDir'] do
     source myAttrs['installer']
     action :unzip
