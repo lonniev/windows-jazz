@@ -22,6 +22,7 @@ myAttrs = node['windows-jazz']
 # refactor this and chrome to a separate recipe
 windows_feature 'DesktopExperience' do
     action :install
+    all true
 end
 
 windows_package 'Google Chrome' do
